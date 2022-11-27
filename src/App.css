@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -11,6 +8,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.title {
+  text-align: center;
 }
 
 .App-header {
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+}
+
+.appBody{
+  margin-left: 5%;
 }

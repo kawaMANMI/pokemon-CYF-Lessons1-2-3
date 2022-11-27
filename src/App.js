@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+import Logo from "./Logo";
+import BestPokemon from "./BestPokemon";
+import PokemonCity from "./PokemonCity";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import CaughtPokemon from "./CaughtPokemon";
 
 function App() {
+  const favouritePoke = "Sonic";
+  const abilities = ["Anticipation", "Adaptability", "Run-Away", "Strong"];
+  const appName = "CYFs";
+
+  const logWhenClicked = () => {
+    console.log("Image Pokemon");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="appBody">
+      <Logo appName={appName} handleClick={logWhenClicked}/>
+      <BestPokemon favouritePoke={favouritePoke} abilities={abilities} />
+
+      <CaughtPokemon />
+      <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 }
